@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TFS COVID</string>
+    <string name="txtNom">Nom:</string>
+    <string name="txtPrenom">Prénom:</string>
+    <string name="numPhone">Téléphone:</string>
+    <string name="txtEmail">Email:</string>
+    <string name="rdoVisiteur">Visiteur</string>
+    <string name="rdoStaff">Staff</string>
+    <string name="rdoEleve">Élève</string>
+</resources>
