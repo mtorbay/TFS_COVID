@@ -13,7 +13,6 @@ public class MainActivity2 extends AppCompatActivity {
     private TextView txtPrenomDisplay;
     private TextView txtPhoneDisplay;
     private TextView txtEmailDisplay;
-    private TextView txtRadioValue;
     private Button btnRetour;
 
     @Override
@@ -24,7 +23,6 @@ public class MainActivity2 extends AppCompatActivity {
         txtNomDisplay=findViewById(R.id.txtNomDisplay);
         txtPhoneDisplay=findViewById(R.id.txtPhoneDisplay);
         txtEmailDisplay=findViewById(R.id.txtEmailDisplay);
-        txtRadioValue=findViewById(R.id.txtRadioValue);
 
         Bundle extras=getIntent().getExtras();
         if(extras!=null)
@@ -39,12 +37,12 @@ public class MainActivity2 extends AppCompatActivity {
             txtPhoneDisplay.setText(phonemessage);
         }
 
+        btnRetour=findViewById(R.id.btnRetour);
         btnRetour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // code ici
                 Intent returnIntent=getIntent();
-                returnIntent.putExtra("returnData", "Bien entendu !");
+                returnIntent.putExtra("returnData", "Retourner au premier page...");
                 setResult(RESULT_OK,returnIntent);
                 finish();
 
